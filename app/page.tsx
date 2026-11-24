@@ -24,13 +24,13 @@ export default function MaintenancePage() {
             />
           </Link>
 
-          <Link
-            href="/"
+          <a
+            href="tel:+16312928833"
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#d9cec1] bg-white/70 hover:bg-white text-xs sm:text-sm font-medium text-[#1E1E1E] transition-all shadow-2xs"
           >
             <Phone className="w-3.5 h-3.5 text-[#C46A3A]" />
             <span>+1 (631) 292-8833</span>
-          </Link>
+          </a>
         </div>
       </header>
 
@@ -56,15 +56,15 @@ export default function MaintenancePage() {
           Our website is currently undergoing planned system maintenance and upgrades to serve you better.
         </p>
 
-        {/* Single Phone CTA Button - links to homepage */}
+        {/* Dial Phone Button - triggers native phone dialer */}
         <div className="flex justify-center items-center">
-          <Link
-            href="/"
+          <a
+            href="tel:+16312928833"
             className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#1E1E1E] hover:bg-[#C46A3A] text-white text-sm font-medium transition-colors shadow-sm"
           >
             <Phone className="w-4 h-4 text-white" />
             <span>Call +1 (631) 292-8833</span>
-          </Link>
+          </a>
         </div>
       </main>
 
