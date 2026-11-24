@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, ArrowRight } from "lucide-react";
+import { Phone } from "lucide-react";
 
 export default function MaintenancePage() {
   return (
@@ -26,10 +26,10 @@ export default function MaintenancePage() {
 
           <Link
             href="/"
-            className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-[#d9cec1] bg-white/70 hover:bg-white text-xs sm:text-sm font-medium text-[#1E1E1E] transition-all shadow-2xs"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#d9cec1] bg-white/70 hover:bg-white text-xs sm:text-sm font-medium text-[#1E1E1E] transition-all shadow-2xs"
           >
-            <Mail className="w-3.5 h-3.5 text-[#C46A3A]" />
-            <span>connect@traveloneglobal.com</span>
+            <Phone className="w-3.5 h-3.5 text-[#C46A3A]" />
+            <span>+1 (631) 292-8833</span>
           </Link>
         </div>
       </header>
@@ -56,20 +56,14 @@ export default function MaintenancePage() {
           Our website is currently undergoing planned system maintenance and upgrades to serve you better.
         </p>
 
-        {/* Action Buttons - all redirect to homepage */}
-        <div className="flex flex-col sm:flex-row items-center gap-3">
+        {/* Single Phone CTA Button - links to homepage */}
+        <div className="flex justify-center items-center">
           <Link
             href="/"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#1E1E1E] hover:bg-[#C46A3A] text-white text-sm font-medium transition-colors shadow-sm"
+            className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#1E1E1E] hover:bg-[#C46A3A] text-white text-sm font-medium transition-colors shadow-sm"
           >
-            <span>Contact Support Desk</span>
-            <ArrowRight className="w-4 h-4" />
-          </Link>
-          <Link
-            href="/"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-[#d9cec1] bg-white/60 hover:bg-white text-[#1E1E1E] text-sm font-medium transition-colors"
-          >
-            <span>Call +1 703-200-3901</span>
+            <Phone className="w-4 h-4 text-white" />
+            <span>Call +1 (631) 292-8833</span>
           </Link>
         </div>
       </main>
